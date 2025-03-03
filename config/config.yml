@@ -1,0 +1,21 @@
+paths:
+  lancamentos: "dados/raw/lancamentos.json"
+  metricas: "dados/raw/metricas.json"
+
+lancamentos:
+  colunas_int:
+    - id_lancamento
+    - id_centro_custo
+    - id_forma_pagamento
+    - id_centro_resultado
+  colunas_float:
+    - valor
+  colunas_data:
+    - dt_vencimento
+    - dt_pagamento
+    - dt_competencia
+metricas:
+  colunas_float:
+    - total
+  colunas_data:
+    - dt_referencia

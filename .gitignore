@@ -1,3 +1,19 @@
-.DS_Store
 .idea/
 
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+venv/
+
+*.egg-info/
+
+.DS_Store
+Thumbs.db
+
+*.log
+
+*~
+*.bak
+*.swp

@@ -1,0 +1,5 @@
+pandas==2.2.3
+pyyaml==6.0.2
+pyarrow==19.0.1
+psycopg2-binary==2.9.10
+SQLAlchemy==2.0.38
