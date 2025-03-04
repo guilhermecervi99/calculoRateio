@@ -55,9 +55,9 @@ def main():
     if not os.path.exists(caminho_saida):
         os.makedirs(caminho_saida)
 
-    df_rateio_etapa1.to_parquet(os.path.join(caminho_saida, "rateio_etapa1.parquet"), index=False)
-    df_rateio_etapa2.to_parquet(os.path.join(caminho_saida, "rateio_etapa2.parquet"), index=False)
-    df_nao_rateados.to_parquet(os.path.join(caminho_saida, "nao_rateados.parquet"), index=False)
+    df_rateio_etapa1.to_parquet(os.path.join(caminho_saida, "rateio_etapa1.parquet"), index=False, compression="gzip")
+    df_rateio_etapa2.to_parquet(os.path.join(caminho_saida, "rateio_etapa2.parquet"), index=False, compression="gzip")
+    df_nao_rateados.to_parquet(os.path.join(caminho_saida, "nao_rateados.parquet"), index=False, compression="gzip")
 
     salvar_no_postgresql(df_rateio_etapa1, "TbRateioEtapa1")
     salvar_no_postgresql(df_rateio_etapa2, "TbRateioEtapa2")
