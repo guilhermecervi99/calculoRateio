@@ -14,6 +14,7 @@ lancamentos:
     - dt_vencimento
     - dt_pagamento
     - dt_competencia
+
 metricas:
   colunas_float:
     - total
